@@ -20,7 +20,7 @@
 	<body>
 		<div class="main">
 			<div class="header">
-				<h1>Library</h1>
+				<h1>S-library</h1>
 				<button id="openModal"><i class="ri-add-line"></i></button>
 
 				<dialog id="bookForm" class="modal">
@@ -39,8 +39,11 @@
 						<label for="pages">Pages:</label>
 						<input type="text" id="pages" /><br />
 
-						<label for="isRead">Have you read this book?</label>
-						<input type="checkbox" id="isRead" /><br />
+						<label>Have you read this book?</label>
+						<label for="isRead" class="switch">
+							<input type="checkbox" id="isRead" />
+							<span class="slider round"></span>
+						</label>
 
 						<button type="submit">Add Book</button>
 					</form>
